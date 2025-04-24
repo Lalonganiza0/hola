@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes Básicos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: white;
+    }
+
+    header {
+      background-color: cornsilk;
+      border-bottom: 2px solid slategrey;
+      padding: 20px;
+    }
+
+    .header-top {
+      text-align: center;
+      font-size: 40px;
+      color: lightblue;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+      background-color: #fdf4dc;
+      border-top: 1px solid slategrey;
+      border-bottom: 1px solid slategrey;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav-bar a:hover {
+      color: #0077aa;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      color: darkslategray;
+    }
+
+    h3 {
+      color: #0077aa;
+      font-size: 28px;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 800px;
+      margin: 10px auto;
+      font-style: italic;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 40px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul li a:hover {
+      color: #0077aa;
+    }
+
+    .indice {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #f0f8ff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .indice h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    .indice ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .indice li a {
+      text-decoration: none;
+      color: #0077aa;
+      font-weight: bold;
+      display: block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .indice li a:hover {
+      background-color: #d6f0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <h1>Componentes Electrónicos Básicos</h1>
+    </div>
+
+    <nav class="nav-bar">
+      <a href="introduccion.html">Introducción</a>
+      <a href="componentes1.html">Componentes básicos</a>
+      <a href="simbolos.html">Simbología y diagramas</a>
+      <a href="conceptos.html">Conceptos</a>
+    </nav>
+  </header>
+
+  <section>
+    <!-- Índice de Categorías -->
+    <nav class="indice">
+      <h3>Índice de Categorías</h3>
+      <ul>
+        <li><a href="#pasivos">Componentes Pasivos</a></li>
+        <li><a href="#activos">Componentes Activos</a></li>
+        <li><a href="#integrados">Circuitos Integrados</a></li>
+        <li><a href="#proteccion">Conmutación y Protección</a></li>
+        <li><a href="#actuadores">Actuadores</a></li>
+        <li><a href="#sensores">Sensores</a></li>
+        <li><a href="#pantallas">Pantallas y Visualización</a></li>
+        <li><a href="#energia">Fuentes de Energía y Regulación</a></li>
+        <li><a href="#comunicacion">Módulos de Comunicación y Potencia</a></li>
+        <li><a href="#placas">Placas, Conexiones y Terminales</a></li>
+      </ul>
+    </nav>
+
+    <h2>Listado por Categorías</h2>
+
+    <h3 id="pasivos">1. Componentes Pasivos</h3>
+    <p>Estos componentes no generan energía, solo la almacenan, disipan o modifican señales eléctricas.</p>
+    <ul>
+      <li><a href="#">Resistencia</a></li>
+      <li><a href="#">Condensador</a></li>
+      <li><a href="#">Bobina</a></li>
+      <li><a href="#">Fusible</a></li>
+      <li><a href="#">Potenciómetro</a></li>
+      <li><a href="#">LDR</a> (resistencia dependiente de luz)</li>
+      <li><a href="#">Termistor</a></li>
+      <li><a href="#">Varistor</a></li>
+      <li><a href="#">Cristal de cuarzo</a></li>
+      <li><a href="#">Zener</a></li>
+    </ul>
+
+    <h3 id="activos">2. Componentes Activos</h3>
+    <p>Son capaces de amplificar señales eléctricas y controlar el flujo de corriente.</p>
+    <ul>
+      <li><a href="#">Diodo</a></li>
+      <li><a href="#">LED</a></li>
+      <li><a href="#">Transistor</a></li>
+      <li><a href="#">Tiristor</a></li>
+      <li><a href="#">Triac</a></li>
+      <li><a href="#">Regulador de voltaje</a></li>
+      <li><a href="#">Oscilador</a></li>
+    </ul>
+
+    <h3 id="integrados">3. Circuitos Integrados</h3>
+    <p>Son dispositivos que integran múltiples componentes electrónicos en un solo chip.</p>
+    <ul>
+      <li><a href="#">Circuito Integrado</a></li>
+      <li><a href="#">Microcontrolador</a></li>
+      <li><a href="#">Microprocesador</a></li>
+    </ul>
+
+    <h3 id="proteccion">4. Conmutación y Protección</h3>
+    <p>Controlan el paso de la corriente eléctrica o protegen al circuito ante fallas.</p>
+    <ul>
+      <li><a href="#">Interruptor</a></li>
+      <li><a href="#">Relé</a></li>
+      <li><a href="#">Optoacoplador</a></li>
+    </ul>
+
+    <h3 id="actuadores">5. Actuadores</h3>
+    <p>Transforman energía eléctrica en movimiento o sonido.</p>
+    <ul>
+      <li><a href="#">Motor DC</a></li>
+      <li><a href="#">Motor paso a paso</a></li>
+      <li><a href="#">Servomotor</a></li>
+      <li><a href="#">Zumbador piezoeléctrico</a></li>
+      <li><a href="#">Buzzer</a></li>
+    </ul>
+
+    <h3 id="sensores">6. Sensores</h3>
+    <p>Detectan variaciones físicas del entorno (como temperatura o luz) y las transforman en señales eléctricas.</p>
+    <ul>
+      <li><a href="#">Sensor de temperatura</a></li>
+      <li><a href="#">Sensor de humedad</a></li>
+      <li><a href="#">Sensor de gas</a></li>
+      <li><a href="#">Sensor PIR</a> (infrarrojo pasivo)</li>
+      <li><a href="#">Sensor magnético</a></li>
+      <li><a href="#">Sensor ultrasónico</a></li>
+      <li><a href="#">Acelerómetro</a></li>
+      <li><a href="#">Giroscopio</a></li>
+    </ul>
+
+    <h3 id="pantallas">7. Pantallas y Visualización</h3>
+    <p>Permiten mostrar información visual como texto, números o gráficos.</p>
+    <ul>
+      <li><a href="#">Display de 7 segmentos</a></li>
+      <li><a href="#">Pantalla LCD</a></li>
+      <li><a href="#">Pantalla OLED</a></li>
+    </ul>
+
+    <h3 id="energia">8. Fuentes de Energía y Regulación</h3>
+    <p>Proveen energía al circuito y regulan el voltaje necesario para su funcionamiento.</p>
+    <ul>
+      <li><a href="#">Batería</a></li>
+      <li><a href="#">Portapilas</a></li>
+      <li><a href="#">Transformador</a></li>
+      <li><a href="#">Regulador lineal</a></li>
+    </ul>
+
+    <h3 id="comunicacion">9. Módulos de Comunicación y Potencia</h3>
+    <p>Facilitan la comunicación inalámbrica o el control de dispositivos de alto consumo.</p>
+    <ul>
+      <li><a href="#">Módulo Bluetooth</a></li>
+      <li><a href="#">Módulo WiFi</a></li>
+      <li><a href="#">Módulo GSM</a></li>
+      <li><a href="#">Módulo GPS</a></li>
+      <li><a href="#">Módulo RFID</a></li>
+      <li><a href="#">Módulo relé</a></li>
+      <li><a href="#">Módulo de potencia MOSFET</a></li>
+      <li><a href="#">Módulo convertidor buck/boost</a></li>
+    </ul>
+
+    <h3 id="placas">10. Placas, Conexiones y Terminales</h3>
+    <p>Permiten montar, conectar y alimentar los componentes dentro de un circuito.</p>
+    <ul>
+      <li><a href="#">Placa protoboard</a></li>
+      <li><a href="#">Placa PCB</a></li>
+      <li><a href="#">Jack de alimentación</a></li>
+      <li><a href="#">Conector jumper</a></li>
+      <li><a href="#">Terminal de tornillo</a></li>
+      <li><a href="#">Pin header</a></li>
+      <li><a href="#">Socket DIP</a></li>
+    </ul>
+  </section>
+
+</body>
+<footer style="background-color: cornsilk; text-align: center;">
+<p> en este apartado estaran los enlaces de referemcia de donde se obtuvo la información de la pagina:
+  <ul>
+<a href="https://www.electronicboard.es/componentes-electronicos-los-mas-utilizados/"> https://www.electronicboard.es/componentes-electronicos-los-mas-utilizados/ </a>  
+</ul>
+<ul>
+<a href="https://microchipotle.com/conceptos-basicos-en-electronica/">https://microchipotle.com/conceptos-basicos-en-electronica/</a>
+</ul>
+<ul>
+  <a href="https://www.edrawsoft.com/es/article/electrical-and-electronic-symbols.html?srsltid=AfmBOoqfXqI7XKVumFlzwYYOJXDsJ54QOGon1VWeIT4lh4uR5yov33jY">https://www.edrawsoft.com/es/article/electrical-and-electronic-symbols.html?srsltid=AfmBOoqfXqI7XKVumFlzwYYOJXDsJ54QOGon1VWeIT4lh4uR5yov33jY</a>
+</ul>
+<ul>
+  <a href="https://www.tme.com/mx/es/news/library-articles/page/45449/diagramas-electronicos-como-leerlos/">https://www.tme.com/mx/es/news/library-articles/page/45449/diagramas-electronicos-como-leerlos/</a>
+</ul>
+</p>
+</footer>
+
+</html>
